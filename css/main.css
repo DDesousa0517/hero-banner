@@ -1,8 +1,34 @@
 html {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
   font-family: 'Open Sans', sans-serif;
 }
 
 *, *::before, *::after {
   box-sizing: inherit;
+}
+
+.img-flex {
+}
+
+.banner-title {
+  color: white;
+  background-color: rgba(0, 0, 0, .5);
+  font-size: 4rem;
+  position: absolute;
+  top: 250px;
+  left: 250px;
+}
+
+.banner-head {
+  position:relative;
+}
+
+.banner-body {
+  position: absolute;
+  font-size: 2rem;
+  max-width: 50em;
+  bottom: 200px;
+  left: 250px;
 }
