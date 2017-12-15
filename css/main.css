@@ -2,33 +2,56 @@ html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 *, *::before, *::after {
   box-sizing: inherit;
 }
 
-.img-flex {
+body {
+  margin: 0;
 }
 
-.banner-title {
-  color: white;
-  background-color: rgba(0, 0, 0, .5);
+.banner-content h2 {
+  font-weight: bold;
   font-size: 4rem;
-  position: absolute;
-  top: 250px;
-  left: 250px;
+  margin: 20px;
 }
 
-.banner-head {
-  position:relative;
+mark {
+  background-color: rgba(0, 0, 0, .5);
+  color: white;
 }
 
-.banner-body {
-  position: absolute;
+.banner-content p {
+  font-style: italic;
   font-size: 2rem;
+  margin: 0;
+  padding-left: 16px;
+  padding-right: 16px;
+  line-height: 1.5;
+}
+
+.banner {
+  position: relative;
+  text-align: center;
+  max-height: 500px;
+  overflow: hidden;
+}
+
+.img-flex {
+  display: block;
+  width: 100%;
+}
+
+.banner-content {
+  position: absolute;
+  margin: 0;
+  bottom: 1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
   max-width: 50em;
-  bottom: 200px;
-  left: 250px;
+  text-align: left;
 }
